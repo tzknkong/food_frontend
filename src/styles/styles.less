@@ -1,0 +1,71 @@
+@import './reset.less';
+@import './form.less';
+@import './fa.less';
+
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('~@assets/fonts/Montserrat-Regular.ttf') format('truetype')
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: #111;
+    overflow-x: hidden;
+    overflow-y: auto;
+    line-height: 1.5;
+}
+
+.main {
+    width: 100%;
+    min-height: 50vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+@media screen and(min-width:1189px) {
+    .main {
+        width: 1190px;
+    }
+}
+
+@media screen and (max-width:980px) {}
+
+
+@media screen and(max-width:1187px) {}
+
+
+
+
+.separator {
+    color: #495057;
+    font-size: 32px;
+    position: relative;
+    margin: 42px 0;
+    text-align: center;
+
+    @media screen and (max-width: 980px) {
+        font-size: 26px;
+    }
+}
+
+.background {
+    z-index: 1;
+    position: relative;
+
+    &:after {
+        background-repeat: repeat;
+        opacity: 0.05;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -5;
+    }
+}
